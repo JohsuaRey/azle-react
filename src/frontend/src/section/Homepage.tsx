@@ -47,6 +47,70 @@ const Homepage = () => {
                 </div>
         </section>
 
+        <section id="events" className="py-20 bg-white">
+            <div className="container mx-auto px-4 text-center">
+                <h2 className="text-4xl font-bold mb-10" data-aos="fade-up">
+                Upcoming Events
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
+                <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                alt="card-image"
+                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                />
+                <p className="mt-4">
+                Join us in planting trees to help restore natural habitats and combat climate change.
+                </p>
+                <a href="/volunteer" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
+                Learn More
+                </a>
+                
+            </div>
+            <div
+                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
+                <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                alt="card-image"
+                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                />
+                <p className="mt-4">
+                Join us in planting trees to help restore natural habitats and combat climate change.
+                </p>
+                <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
+                Learn More
+                </a>
+            </div>
+            <div
+                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
+                <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                alt="card-image"
+                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                />
+                <p className="mt-4">
+                Join us in planting trees to help restore natural habitats and combat climate change.
+                </p>
+                <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
+                Learn More
+                </a>
+            </div>
+        </div>
+            </div>
+        </section>
 
         <section className='w-auto min-h-[90vh] pt-10'>
             <div className='py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>
