@@ -20,7 +20,7 @@ const Homepage = () => {
             <p className='pt-4 text-xl tracking-wide '
             data-aos="fade-up"
             data-aos-delay="100">Be the change. Volunteer for climate action and help protect the planet for future generations.</p>
-            <a href="/volunteer" className=' outline-none px-10 py-3 rounded-lg text-white text-lg bg-[#305773] hover:bg-[#243642] mt-4 '
+            <a href="#events" className=' outline-none px-10 py-3 rounded-lg text-white text-lg bg-[#305773] hover:bg-[#243642] mt-4 '
             data-aos="fade-up"
             data-aos-delay="300">Become a Volunteer</a>
         </div>
@@ -44,7 +44,9 @@ const Homepage = () => {
                 </div>
             </div>
         </section>
+
         {/* para sa events */}
+
         <section id="events" className="py-20 bg-white">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-4xl font-bold mb-10" data-aos="fade-up">
@@ -280,7 +282,6 @@ const Homepage = () => {
                 <div className=' text-center'>
                     <h4 className='text-2xl font-bold '>"The greatest threat to our planet is the belief that someone else will save it." </h4>
                 </div>
-                <p className='text-lg text-right'>– Robert Swan</p>
             </div>
             <p className='text-center pb-4'>All rights reserved 2024</p>
         </footer>
