@@ -1,27 +1,63 @@
-import React from 'react'
-
+import { useEffect } from 'react';
+import React, { useState } from 'react';
 const Volunteerpage = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
+    const [formData, setFormData] = useState({
+        firstname: '',
+        lastname: '',       
+        middlename: '',
+        extensionname: '',
+        contact: '',
+        gender: '',
+        address: '',
+        email: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Volunteer Data Submitted:', formData);
+    };
   return (
     <div className="bg-gray-100 min-h-screen">
             <section className="relative bg-cover bg-center h-[80vh] bg-[url('/bg.png')]">
                 <div className="absolute inset-0 bg-green-900 opacity-50"></div>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-                    <h1 className="text-5xl font-bold mb-4">Act Now for a Better Tomorrow</h1>
-                    <p className="text-lg mb-6">Join our climate change movement and be a part of the solution.</p>
-                    <a href="#sign-up" className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-full shadow-lg transition duration-300">Become a Volunteer</a>
+                    <h1 className="text-5xl font-bold mb-4"
+                    data-aos="fade-up"
+                    data-aos-delay="100">Act Now for a Better Tomorrow</h1>
+                    <p className="text-lg mb-6"
+                    data-aos="fade-up"
+                    data-aos-delay="100">Join our climate change movement and be a part of the solution.</p>
+                    <a href="#sign-up" className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-full shadow-lg transition duration-300"
+                    data-aos="fade-up"
+                    data-aos-delay="300">Become a Volunteer</a>
                 </div>
             </section>
 
             
             <section className="py-16 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-green-600 mb-6">Our Key Initiatives</h2>
+                <div className="container mx-auto px-4 text-center"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                    <h2 className="text-3xl font-bold text-green-600 mb-6"
+                    data-aos="fade-up"
+                    data-aos-delay="100">Our Key Initiatives</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="p-6 bg-green-50 rounded-lg shadow-lg">
                             <div className="text-green-600 text-4xl mb-4">
                                 🌱
                             </div>
-                            <h3 className="text-xl font-semibold mb-2">Tree Planting</h3>
+                            <h3 className="text-xl font-semibold mb-2" 
+                            >Tree Planting</h3>
                             <p>Help us plant trees and restore natural habitats to reduce carbon footprints and promote green environments.</p>
                         </div>
                         <div className="p-6 bg-green-50 rounded-lg shadow-lg">
@@ -47,8 +83,12 @@ const Volunteerpage = () => {
             <div className="bg-gray-100 min-h-screen">
             <section id="sign-up" className="py-16 bg-green-50">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold text-green-600 mb-6">Sign Up to Make a Difference</h2>
-                    <form  className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <h2 className="text-3xl font-bold text-green-600 mb-6"
+                    data-aos="fade-up"
+                    data-aos-delay="100">Sign Up to Make a Difference</h2>
+                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label htmlFor="firstname" className="block text-left mb-2 text-sm font-medium text-gray-900">First Name</label>
@@ -58,8 +98,8 @@ const Volunteerpage = () => {
                                     name="firstname"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                     placeholder="Your first name"
-                                    // value={formData.firstname}
-                                    // onChange={handleChange}
+                                    value={formData.firstname}
+                                    onChange={handleChange}
                                     required
                                 />
                             </div>
@@ -71,8 +111,8 @@ const Volunteerpage = () => {
                                     name="lastname"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                     placeholder="Your last name"
-                                    // value={formData.lastname}
-                                    // onChange={handleChange}
+                                    value={formData.lastname}
+                                    onChange={handleChange}
                                     required
                                 />
                             </div>
@@ -87,8 +127,8 @@ const Volunteerpage = () => {
                                     name="middlename"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                     placeholder="Your middle name"
-                                    // value={formData.middlename}
-                                    // onChange={handleChange}
+                                    value={formData.middlename}
+                                    onChange={handleChange}
                                 />
                             </div>
                             <div>
@@ -99,8 +139,8 @@ const Volunteerpage = () => {
                                     name="extensionname"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                     placeholder="Your extension name"
-                                    // value={formData.extensionname}
-                                    // onChange={handleChange}
+                                    value={formData.extensionname}
+                                    onChange={handleChange}
                                 />
                             </div>
                         </div>
@@ -114,8 +154,8 @@ const Volunteerpage = () => {
                                     name="contact"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                     placeholder="Your contact number"
-                                    // value={formData.contact}
-                                    // onChange={handleChange}
+                                    value={formData.contact}
+                                    onChange={handleChange}
                                     required
                                 />
                             </div>
@@ -125,8 +165,8 @@ const Volunteerpage = () => {
                                     id="gender"
                                     name="gender"
                                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                                    // value={formData.gender}
-                                    // onChange={handleChange}
+                                    value={formData.gender}
+                                    onChange={handleChange}
                                     required
                                 >
                                     <option value="">Select your gender</option>
@@ -145,8 +185,8 @@ const Volunteerpage = () => {
                                 name="address"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                 placeholder="Your address"
-                                // value={formData.address}
-                                // onChange={handleChange}
+                                value={formData.address}
+                                onChange={handleChange}
                                 required
                             />
                         </div>
@@ -159,8 +199,8 @@ const Volunteerpage = () => {
                                 name="email"
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                 placeholder="Your email"
-                                // value={formData.email}
-                                // onChange={handleChange}
+                                value={formData.email}
+                                onChange={handleChange}
                                 required
                             />
                         </div>
