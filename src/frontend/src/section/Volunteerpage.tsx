@@ -44,41 +44,59 @@ const Volunteerpage = () => {
             </section>
 
             
-            <section className="py-16 bg-white">
+            {/* <section className="py-16 bg-white">
                 <div className="container mx-auto px-4 text-center"
-                data-aos="fade-up"
-                data-aos-delay="100">
+                    data-aos="fade-up"
+                    data-aos-delay="100">
                     <h2 className="text-3xl font-bold text-green-600 mb-6"
                     data-aos="fade-up"
                     data-aos-delay="100">Our Key Initiatives</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="p-6 bg-green-50 rounded-lg shadow-lg">
-                            <div className="text-green-600 text-4xl mb-4">
-                                🌱
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2" 
-                            >Tree Planting</h3>
-                            <p>Help us plant trees and restore natural habitats to reduce carbon footprints and promote green environments.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2">
+                        <div className='h-[60vh] w-[50w]'>
+                            <img src="/resilient climate.webp" alt="" className='w-full h-full'/>
                         </div>
-                        <div className="p-6 bg-green-50 rounded-lg shadow-lg">
-                            <div className="text-green-600 text-4xl mb-4">
-                                🌍
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">Climate Education</h3>
-                            <p>Spread knowledge about climate change and its impact through educational workshops and community outreach.</p>
-                        </div>
-                        <div className="p-6 bg-green-50 rounded-lg shadow-lg">
-                            <div className="text-green-600 text-4xl mb-4">
-                                ♻️
-                            </div>
-                            <h3 className="text-xl font-semibold mb-2">Recycling Programs</h3>
-                            <p>Organize and participate in local recycling drives to reduce waste and encourage sustainable living practices.</p>
+                        <div className=''>
+                            <p className='text-lg tracking-wide leading-10'
+                            data-aos="fade-up"
+                            data-aos-delay="300">
+                            Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
+                            It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
+                            The goal encourages global cooperation to reduce carbon emissions, enhance disaster risk management, and promote sustainable practices to protect ecosystems and ensure a sustainable future for all. 
+                            </p>
                         </div>
                     </div>
                 </div>
+            </section> */}
+            
+            <section className=' w-auto pt-8 min-h-[90vh]'>
+                <div className='pt-4'>
+
+                    <h4 className='text-4xl text-center font-bold text-green-600'
+                    data-aos="fade-up"
+                    data-aos-delay="100">Event Discription <br/>
+                    <span className='text-gray-600 text-sm'>Date: </span><span className='text-gray-400 text-sm'>Date:</span>
+                    </h4>
+                </div>
+                <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
+                    <div>
+                        <div className='h-[60vh] w-[50w]'
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+                            <img src="/resilient climate.webp" alt="" className='w-full h-full rounded-lg shadow-md'/>
+                        </div>
+                    </div>
+                    <div className=''>
+                    <div>
+                        <p className='text-lg tracking-wide leading-10'
+                            data-aos="fade-up"
+                            data-aos-delay="300">
+                            Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
+                            It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
+                        </p>
+                    </div>
+                    </div>
+                </div>
             </section>
-
-
             
             <div className="bg-gray-100 min-h-screen">
             <section id="sign-up" className="py-16 bg-green-50">
