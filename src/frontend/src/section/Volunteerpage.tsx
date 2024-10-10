@@ -26,6 +26,22 @@ const Volunteerpage = () => {
         e.preventDefault();
         console.log('Volunteer Data Submitted:', formData);
     };
+
+    // date
+    const currentDate = new Date();
+
+  const dateInWords = currentDate.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  const timeInWords = currentDate.toLocaleTimeString('en-US', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+  });
   return (
     <div className="bg-gray-100 min-h-screen">
             <section className="relative bg-cover bg-center h-[80vh] bg-[url('/bg.png')]">
@@ -74,7 +90,7 @@ const Volunteerpage = () => {
                     <h4 className='text-4xl text-center font-bold text-green-600'
                     data-aos="fade-up"
                     data-aos-delay="100">Event Discription <br/>
-                    <span className='text-gray-600 text-sm'>Date: </span><span className='text-gray-400 text-sm'>Date:</span>
+                    
                     </h4>
                 </div>
                 <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
@@ -83,6 +99,7 @@ const Volunteerpage = () => {
                         data-aos="fade-up"
                         data-aos-delay="100">
                             <img src="/resilient climate.webp" alt="" className='w-full h-full rounded-lg shadow-md'/>
+                            
                         </div>
                     </div>
                     <div className=''>
@@ -93,9 +110,15 @@ const Volunteerpage = () => {
                             Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                             It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
                         </p>
+                        <div className='flex items-end justify-end pt-5' 
+                            data-aos="fade-up"
+                            data-aos-delay="300">
+                            <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span>
+                        </div>
                     </div>
                     </div>
                 </div>
+                
             </section>
             
             <div className="bg-gray-100 min-h-screen">

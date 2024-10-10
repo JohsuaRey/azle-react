@@ -12,7 +12,7 @@ const Homepage = () => {
         <Navbar/>
        <section
         className="min-h-screen w-auto bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/mesh-gradient.png')` }}
+        style={{ backgroundImage: `url('/bg.png')` }}
         >
         <div className='flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
             <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] ' data-aos="fade-on"
@@ -68,7 +68,7 @@ const Homepage = () => {
                 Join us in planting trees to help restore natural habitats and combat climate change.
                 </p>
                 <a href="volunteer" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Learn More
+                Volunteer Now
                 </a>
                 
             </div>
@@ -87,7 +87,7 @@ const Homepage = () => {
                 Join us in planting trees to help restore natural habitats and combat climate change.
                 </p>
                 <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Learn More
+                Volunteer Now
                 </a>
             </div>
             <div
@@ -101,11 +101,11 @@ const Homepage = () => {
                 alt="card-image"
                 className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
                 />
-                <p className="mt-4" >
+                <p className="mt-4">
                 Join us in planting trees to help restore natural habitats and combat climate change.
                 </p>
                 <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Learn More
+                Volunteer Now
                 </a>
             </div>
         </div>
