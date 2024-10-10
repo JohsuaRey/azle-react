@@ -110,10 +110,15 @@ const Volunteerpage = () => {
                             Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                             It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
                         </p>
-                        <div className='flex items-end justify-end pt-5' 
+                        {/* date of events */}
+                        <div className='block items-start justify-start pt-5' 
                             data-aos="fade-up"
                             data-aos-delay="300">
-                            <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span>
+                            <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span><br/>
+                            <span className='text-gray-700 text-sm text-center'>Time of event: <span className='text-gray-500'>{timeInWords}</span></span><br/>
+                            <span className='text-gray-700 text-sm text-center'>Address of event: <span className='text-gray-500'>
+                                Sinabacn, Cande, Zambales
+                            </span></span><br/>
                         </div>
                     </div>
                     </div>
