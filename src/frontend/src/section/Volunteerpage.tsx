@@ -115,7 +115,7 @@ const Volunteerpage = () => {
                             data-aos="fade-up"
                             data-aos-delay="300">
                             <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span><br/>
-                            <span className='text-gray-700 text-sm text-center'>Time of event: <span className='text-gray-500'>{timeInWords}</span></span><br/>
+                            <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'>{timeInWords}</span></span><br/>
                             <span className='text-gray-700 text-sm text-center'>Address of event: <span className='text-gray-500'>
                                 Sinabacn, Cande, Zambales
                             </span></span><br/>
@@ -128,11 +128,17 @@ const Volunteerpage = () => {
             
             <div className="bg-gray-100 min-h-screen">
             <section id="sign-up" className="py-16 bg-green-50">
-                <div className="container mx-auto px-4 text-center">
+                <div className="w-[80%] mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold text-green-600 mb-6"
                     data-aos="fade-up"
                     data-aos-delay="100">Sign Up to Make a Difference</h2>
-                    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg"
+                    <div className='grid grid-cols-1 rounded-xl md:grid-cols-2 shadow-xl '>
+                        <div className=''
+                        data-aos="fade-up"
+                        data-aos-delay="300">
+                            <img src="/signupbg.png" alt="" className='md:w-full h-full '/>
+                        </div>
+                    <form onSubmit={handleSubmit} className="w-full mx-auto bg-white p-8 rounded-lg"
                     data-aos="fade-up"
                     data-aos-delay="300">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -258,6 +264,7 @@ const Volunteerpage = () => {
                             Join Our Mission
                         </button>
                     </form>
+                    </div>
                 </div>
             </section>
         </div>
