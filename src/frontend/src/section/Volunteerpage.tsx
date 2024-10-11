@@ -111,7 +111,7 @@ const Volunteerpage = () => {
                             It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
                         </p>
                         {/* date of events */}
-                        <div className='block items-start justify-start pt-5' 
+                        <div className='block items-start justify-start mt-5 pl-2 border-l-4  border-green-500' 
                             data-aos="fade-up"
                             data-aos-delay="300">
                             <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span><br/>
