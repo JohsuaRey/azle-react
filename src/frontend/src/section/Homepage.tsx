@@ -30,12 +30,12 @@ const Homepage = () => {
             <div className='py-8 mt-20 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
                 <div>
                     <h4 className='text-4xl font-bold text-left pt-4'
-                    data-aos="fade-up"
+                    data-aos="fade-right"
                     data-aos-delay="100">A Sustainable Development Goal for Climate Action</h4>
                 </div>
                 <div className=''>
                     <p className='text-lg tracking-wide leading-10'
-                    data-aos="fade-up"
+                    data-aos="fade-left"
                     data-aos-delay="300">
                      Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                      It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
@@ -114,7 +114,7 @@ const Homepage = () => {
 
         <section className='w-auto min-h-[75vh]'>
             <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
-                    <div className='' data-aos="fade-up"
+                    <div className='' data-aos="fade-right"
                 data-aos-delay="100">
                         <p className='text-lg tracking-wide leading-10'>
                         Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
@@ -124,7 +124,7 @@ const Homepage = () => {
                     </div>
                     <div>
                     <img src="/climate action2.png" alt="" className='rounded-xl w-full h-auto' 
-                    data-aos="fade-up"
+                    data-aos="fade-left"
                     data-aos-delay="300"/>
                     </div>
                 

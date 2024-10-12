@@ -111,13 +111,13 @@ const Volunteerpage = () => {
                             It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
                         </p>
                         {/* date of events */}
-                        <div className='block items-start justify-start mt-5 pl-2 border-l-4  border-green-500' 
+                        <div className='block items-start justify-start mt-5 py-3 rounded-lg pl-2 border-l-4  border-green-500 bg-green-100' 
                             data-aos="fade-up"
                             data-aos-delay="300">
                             <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span><br/>
                             <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'>{timeInWords}</span></span><br/>
                             <span className='text-gray-700 text-sm text-center'>Address of event: <span className='text-gray-500'>
-                                Sinabacn, Cande, Zambales
+                                Sinabacan, Cande, Zambales
                             </span></span><br/>
                         </div>
                     </div>
@@ -268,7 +268,37 @@ const Volunteerpage = () => {
                 </div>
             </section>
         </div>
+        <footer className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="text-center md:text-left mb-4 md:mb-0">
+          <h3 className="text-lg font-semibold">Act on Climate Change</h3>
+          <p className="text-sm mt-2">
+            Climate change is real and it's happening now. Let's take action to reduce our carbon footprint
+            and protect our planet for future generations.
+          </p>
         </div>
+        <div className="flex space-x-4 mb-4 md:mb-0">
+          <a href="https://www.ipcc.ch/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
+            IPCC Reports
+          </a>
+          <a href="https://climate.nasa.gov/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
+            NASA Climate
+          </a>
+          <a href="https://www.un.org/climatechange" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
+            UN Climate Action
+          </a>
+        </div>
+        <div className="text-center md:text-right">
+          <p className="text-sm">
+            © {new Date().getFullYear()} Climate Change Initiative. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+        </div>
+
+        
+        
   )
 }
 
