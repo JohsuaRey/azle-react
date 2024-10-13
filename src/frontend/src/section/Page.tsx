@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { useEffect } from 'react';
-const Homepage = () => {
+import Navbar from './Navbar';
+const HomePage = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000
@@ -12,32 +12,22 @@ const Homepage = () => {
         <Navbar/>
        <section
         className="min-h-screen w-auto bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/bg.png')` }}
+        style={{ backgroundImage: `url('/mesh-gradient.png')` }}
         >
         <div className='flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
-            <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] ' 
-                data-aos="fade-on"
-                data-aos-delay="100">Join the Movement for a Greener Tomorrow</h3>
-            <p className='pt-4 text-xl tracking-wide '
-            data-aos="fade-up"
-            data-aos-delay="100">Be the change. Volunteer for climate action and help protect the planet for future generations.</p>
-            <a href="#events" className=' outline-none px-10 py-3 rounded-lg text-white text-lg bg-[#305773] hover:bg-[#243642] mt-4 '
-            data-aos="fade-up"
-            data-aos-delay="300">Become a Volunteer</a>
+            <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] '>Join the Movement for a Greener Tomorrow</h3>
+            <p className='pt-4 text-xl tracking-wide '>Be the change. Volunteer for climate action and help protect the planet for future generations.</p>
+            <a href="/volunteer" className=' outline-none px-10 py-3 rounded-lg text-white text-lg bg-[#305773] hover:bg-[#243642] mt-4 '>Become a Volunteer</a>
         </div>
         </section>
 
         <section className=' w-auto pt-8 min-h-[90vh]'>
             <div className='py-8 mt-20 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
                 <div>
-                    <h4 className='text-4xl font-bold text-left pt-4'
-                    data-aos="fade-right"
-                    data-aos-delay="100">A Sustainable Development Goal for Climate Action</h4>
+                    <h4 className='text-4xl font-bold text-left pt-4'>A Sustainable Development Goal for Climate Action</h4>
                 </div>
                 <div className=''>
-                    <p className='text-lg tracking-wide leading-10'
-                    data-aos="fade-left"
-                    data-aos-delay="300">
+                    <p className='text-lg tracking-wide leading-10'>
                      Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                      It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
                      The goal encourages global cooperation to reduce carbon emissions, enhance disaster risk management, and promote sustainable practices to protect ecosystems and ensure a sustainable future for all. 
@@ -45,8 +35,6 @@ const Homepage = () => {
                 </div>
             </div>
         </section>
-
-        {/* para sa events */}
 
         <section id="events" className="py-20 bg-white">
             <div className="container mx-auto px-4 text-center">
@@ -115,8 +103,7 @@ const Homepage = () => {
 
         <section className='w-auto min-h-[75vh]'>
             <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
-                    <div className='' data-aos="fade-right"
-                data-aos-delay="100">
+                    <div className=''>
                         <p className='text-lg tracking-wide leading-10'>
                         Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                         It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
@@ -124,9 +111,7 @@ const Homepage = () => {
                         </p>
                     </div>
                     <div>
-                    <img src="/climate action2.png" alt="" className='rounded-xl w-full h-auto' 
-                    data-aos="fade-left"
-                    data-aos-delay="300"/>
+                    <img src="/climate action2.png" alt="" className='rounded-xl w-full h-auto' />
                     </div>
                 
                 </div>
@@ -135,60 +120,24 @@ const Homepage = () => {
 
         <section className='w-auto min-h-[90vh] pt-10'>
             <div className='py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>
-                    <div className='grid grid-cols-2 gap-2 md:max-w-[50%]'
-                    data-aos="fade-up"
-                    data-aos-delay="100">
+                    <div className='grid grid-cols-2 gap-2 md:max-w-[50%]'>
                     <img src="/climate pic.webp" alt="" className='rounded-xl w-full h-full' />
                     <img src="/action pic.jpg" alt="" className='rounded-xl w-full h-full' />
                     <img src="/Climate_Action.jpg" alt="" className='rounded-xl w-full h-full' />
                     <img src="/3rs2.png" alt="" className='rounded-xl w-full h-full' />
                     </div>
                     <div>
-                        <h4 className='text-4xl font-bold text-center md:text-left pt-4'
-                        data-aos="fade-up"
-                        data-aos-delay="100">Innovative Solutions for a Greener Future </h4>
+                        <h4 className='text-4xl font-bold text-center md:text-left pt-4'>Innovative Solutions for a Greener Future </h4>
                     </div>
                 </div>
         </section>
-        <section id="actions" className="py-20 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-10" 
-                    data-aos="fade-up"
-                    data-aos-delay="100">Key Actions for Climate Action</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8"
-                    data-aos="fade-up"
-                    data-aos-delay="100">
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                            <h3 className="text-2xl font-semibold mb-4">Reduce Carbon Emissions</h3>
-                            <p>
-                                Implement policies to reduce greenhouse gas emissions through sustainable energy, transportation, and industry practices.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                            <h3 className="text-2xl font-semibold mb-4">Enhance Disaster Risk Management</h3>
-                            <p>
-                                Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
-                            <h3 className="text-2xl font-semibold mb-4">Promote Sustainable Practices</h3>
-                            <p>
-                                Encourage sustainable consumption and production practices that reduce environmental footprints and protect ecosystems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         <section className='w-auto min-h-[100vh] pt-20'>
-             <div className='text-center pt-10' 
-             data-aos="fade-up"
-             data-aos-delay="100">
+             <div className='text-center pt-10'>
                 <h4 className='text-4xl font-bold  pt-4'>Climate Action: Turning Ideas into Impact</h4>
             </div>
             <div className='py-16 mt-8 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/renewable energy.webp" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -197,9 +146,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Shift from fossil fuels to clean energy sources like solar, wind, hydro, and geothermal power.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/energy-efficiency.jpeg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -208,9 +155,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Implement energy-saving practices in homes, businesses, and industries by using efficient appliances and optimizing energy usage.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/reforest.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -219,9 +164,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Protect existing forests and plant new trees to absorb carbon dioxide, creating carbon sinks.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/electric vehicle.webp" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -230,9 +173,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Encourage the use of electric cars, buses, and bikes to reduce pollution from traditional combustion engines.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/3rs.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -241,9 +182,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Minimize waste production and encourage recycling programs to reduce the amount of waste in landfills, which produce harmful greenhouse gases.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/conserve water.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -252,9 +191,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Protect water bodies and adopt water-efficient practices in agriculture, industry, and households to safeguard this vital resource.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/plant based diet.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
@@ -263,9 +200,7 @@ const Homepage = () => {
                         <p className='text-md max-w-[400px] '>Reducing meat consumption can lower methane emissions from livestock and decrease the land and water used for animal farming.</p>
                     </div>
                 </div>
-                <div className='flex items-start justify-center gap-4 '
-                data-aos="fade-up"
-                data-aos-delay="100">
+                <div className='flex items-start justify-center gap-4 '>
                     <div>
                         <img src="/resilient climate.webp" alt="" className='rounded-xl w-[100px] h-[100px]' />
                     </div>
@@ -293,4 +228,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage
+export default HomePage

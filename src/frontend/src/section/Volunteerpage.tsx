@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import React, { useState } from 'react';
+
 const Volunteerpage = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000,
         });
       }, []);
+
+
     const [formData, setFormData] = useState({
         firstname: '',
         lastname: '',       
@@ -27,7 +30,6 @@ const Volunteerpage = () => {
         console.log('Volunteer Data Submitted:', formData);
     };
 
-    // date
     const currentDate = new Date();
 
   const dateInWords = currentDate.toLocaleDateString('en-US', {
@@ -88,8 +90,7 @@ const Volunteerpage = () => {
                 <div className='pt-4'>
 
                     <h4 className='text-4xl text-center font-bold text-green-600'
-                    data-aos="fade-up"
-                    data-aos-delay="100">Event Discription <br/>
+                    >Event Discription <br/>
                     
                     </h4>
                 </div>
@@ -268,33 +269,7 @@ const Volunteerpage = () => {
                 </div>
             </section>
         </div>
-        <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
-          <h3 className="text-lg font-semibold">Act on Climate Change</h3>
-          <p className="text-sm mt-2">
-            Climate change is real and it's happening now. Let's take action to reduce our carbon footprint
-            and protect our planet for future generations.
-          </p>
-        </div>
-        <div className="flex space-x-4 mb-4 md:mb-0">
-          <a href="https://www.ipcc.ch/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
-            IPCC Reports
-          </a>
-          <a href="https://climate.nasa.gov/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
-            NASA Climate
-          </a>
-          <a href="https://www.un.org/climatechange" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-green-500">
-            UN Climate Action
-          </a>
-        </div>
-        <div className="text-center md:text-right">
-          <p className="text-sm">
-            © {new Date().getFullYear()} Climate Change Initiative. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+        
         </div>
 
         
