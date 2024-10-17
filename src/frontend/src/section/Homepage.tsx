@@ -149,8 +149,8 @@ const Homepage = () => {
                         </div>
                         <div className=''>
                         <div>
-                            <h4 className='text-2xl text-center text-black'
-                                >Tree Planting Campaign<br/>
+                            <h4 className='text-2xl text-center font-bold text-green-500'
+                                >Tree Planting<br/>
                             </h4>
                             <p className='text-lg tracking-wide leading-10'>
                                 Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
@@ -173,6 +173,7 @@ const Homepage = () => {
                         See more
                     </a>
                 </div>
+                <hr className='w-[70vw] m-auto'/>
         </section>
         <section className='w-auto min-h-[75vh]'>
             <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>

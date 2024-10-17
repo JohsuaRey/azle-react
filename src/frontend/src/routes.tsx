@@ -7,8 +7,8 @@ const AppRoutes = () => {
         <BrowserRouter>
             <Router>
                 <Routes>
-                    <Route path="/" index element={<Volunteerpage/>} />
-                    <Route path="volunteer" element={<Volunteerpage />} />
+                    <Route index element={<Homepage/>} />
+                    <Route path="/volunteer" element={<Volunteerpage />} />
                 </Routes>
             </Router>
         </BrowserRouter>
