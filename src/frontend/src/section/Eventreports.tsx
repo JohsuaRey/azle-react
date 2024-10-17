@@ -1,20 +1,4 @@
-import React, { useState } from 'react';
-
 const EventLandingPage = () => {
-    const currentDate = new Date();
-
-    const dateInWords = currentDate.toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
-
-    const timeInWords = currentDate.toLocaleTimeString('en-US', {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: true,
-    });
 
     return (
         <section className='w-full min-h-screen bg-gray-100'>
@@ -50,10 +34,10 @@ const EventLandingPage = () => {
                     </p>
                     <div className='mt-5 py-3 rounded-lg pl-2 border-l-4 border-green-500 bg-green-100'>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Date of event:</strong> <span className='text-gray-500'>{dateInWords}</span>
+                            <strong>Date of event:</strong> <span className='text-gray-500'>Thursday, October 17, 2024</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Time:</strong> <span className='text-gray-500'>{timeInWords}</span>
+                            <strong>Time:</strong> <span className='text-gray-500'>09:43 PM</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
                             <strong>Address of event:</strong> <span className='text-gray-500'>Sinabacan, Cande, Zambales</span>
@@ -72,10 +56,10 @@ const EventLandingPage = () => {
                     </p>
                     <div className='mt-5 py-3 rounded-lg pl-2 border-l-4 border-green-500 bg-green-100'>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Date of event:</strong> <span className='text-gray-500'>{dateInWords}</span>
+                            <strong>Date of event:</strong> <span className='text-gray-500'>Thursday, October 17, 2024</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Time:</strong> <span className='text-gray-500'>{timeInWords}</span>
+                            <strong>Time:</strong> <span className='text-gray-500'>09:43 PM</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
                             <strong>Address of event:</strong> <span className='text-gray-500'>Sinabacan, Cande, Zambales</span>
@@ -100,10 +84,10 @@ const EventLandingPage = () => {
                     </p>
                     <div className='mt-5 py-3 rounded-lg pl-2 border-l-4 border-green-500 bg-green-100'>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Date of event:</strong> <span className='text-gray-500'>{dateInWords}</span>
+                            <strong>Date of event:</strong> <span className='text-gray-500'>Thursday, October 17, 2024</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
-                            <strong>Time:</strong> <span className='text-gray-500'>{timeInWords}</span>
+                            <strong>Time:</strong> <span className='text-gray-500'>09:43 PM</span>
                         </p>
                         <p className='text-gray-700 text-sm'>
                             <strong>Address of event:</strong> <span className='text-gray-500'>Sinabacan, Cande, Zambales</span>

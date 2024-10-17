@@ -10,21 +10,6 @@ const Homepage = () => {
           duration: 1000
         });
       }, []);
-
-      const currentDate = new Date();
-
-  const dateInWords = currentDate.toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-
-  const timeInWords = currentDate.toLocaleTimeString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true,
-  });
   return (
     <section>
         <Navbar/>
@@ -158,8 +143,8 @@ const Homepage = () => {
                             </p>
                             {/* date of events */}
                             <div className='block items-start justify-start mt-5 py-3 rounded-lg pl-2 border-l-4  border-green-500 bg-green-100'>
-                                <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>{dateInWords}</span></span><br/>
-                                <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'>{timeInWords}</span></span><br/>
+                                <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>Thursday, October 17, 2024</span></span><br/>
+                                <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'> 09:46 PM</span></span><br/>
                                 <span className='text-gray-700 text-sm text-center'>Address of event: <span className='text-gray-500'>
                                     Sinabacan, Cande, Zambales
                                 </span></span><br/>
