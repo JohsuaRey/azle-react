@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { useEffect } from 'react';
+import Eventreports from './Eventreports';
+
+
 const Homepage = () => {
     useEffect(() => {
         AOS.init({
@@ -113,6 +116,9 @@ const Homepage = () => {
             </div>
         </section>
 
+        {/* RecentEvents */}
+        <Eventreports/>
+
         <section className='w-auto min-h-[75vh]'>
             <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
                     <div className='' data-aos="fade-right"
@@ -131,8 +137,7 @@ const Homepage = () => {
                 
                 </div>
         </section>
-
-
+        
         <section className='w-auto min-h-[90vh] pt-10'>
             <div className='py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>
                     <div className='grid grid-cols-2 gap-2 md:max-w-[50%]'
