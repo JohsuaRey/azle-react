@@ -7,9 +7,9 @@ function App() {
 
   return (
     <main className='w-auto h-auto'>
-        <Homepage/> 
-        {/* <Volunteerpage/>
-        <Eventreports/> */}
+        {/* <Homepage/> 
+        <Volunteerpage/> */}
+        <Eventreports/>
     </main >
   );
 }

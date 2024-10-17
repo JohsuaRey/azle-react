@@ -12,17 +12,24 @@ const EventLandingPage = () => {
                     <p className='text-lg md:text-xl mb-6'>
                         Join us in taking urgent actions to combat climate change and strengthen resilience to climate-related hazards.
                     </p>
-                    <button className='bg-green-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-green-600 transition duration-300'>
-                        Get Involved
-                    </button>
+                    <a href="#eventReport">
+                        <button className='bg-green-500 text-white px-6 py-3 rounded-full text-lg shadow-md hover:bg-green-600 transition duration-300'>
+                            Get Involved
+                        </button>
+                        <div className='flex justify-center items-center mt-8'>
+                            <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <div className='text-center pt-8 '>
+            <div className='text-center pt-8 '  id="eventReport">
                 <h2 className='text-3xl font-bold text-green-500'>Recent Event</h2>
             </div>
 
-            {/* About Event Section */}
+            {/* About Event report */}
             <div className='py-16 px-6 max-w-6xl mx-auto grid gap-12 md:grid-cols-2 items-center'>
                 <div>
                     <img src="/plant based diet.jpg" alt="Tree Planting Campaign" className='w-full h-full rounded-lg shadow-md' />
