@@ -58,6 +58,11 @@ const Volunteerpage = () => {
                     <a href="#sign-up" className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-full shadow-lg transition duration-300"
                     data-aos="fade-up"
                     data-aos-delay="300">Become a Volunteer</a>
+                    <div className='flex justify-center items-center mt-8'>
+                        <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
+                        </svg>
+                    </div>
                 </div>
             </section>
 
