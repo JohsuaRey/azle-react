@@ -121,8 +121,7 @@ const Homepage = () => {
             </div>
         </section>
 
-        {/* RecentEvents */}
-        {/* <Eventreports/> */}
+        {/*para sa Recent Events */}
         <section className='w-auto min-h-[75vh]'>
         <div>
                         <div className='pt-6'>
