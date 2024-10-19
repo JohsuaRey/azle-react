@@ -31,8 +31,6 @@ const EventLandingPage = () => {
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-5xl font-bold mb-4">Act Now for a Better Tomorrow</h1>
                     <p className="text-lg mb-6">Join our climate change movement and be a part of the solution.</p>
-                    <a className="bg-green-500 text-white py-3 px-6 rounded-full shadow-lg"
-                    >Become a Volunteer</a>
                     <div className='flex justify-center items-center mt-8'>
                         <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>

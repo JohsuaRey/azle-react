@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 560);
+      setSticky(window.scrollY > 150);
     };
 
     window.addEventListener('scroll', handleScroll);
