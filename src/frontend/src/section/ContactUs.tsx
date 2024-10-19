@@ -2,10 +2,10 @@ import React from 'react';
 
 const ContactUs = () => {
   return (
-    <section id="contact" className="py-16 bg-green-50">
+    <section id="contact" className="mt-8 py-16 bg-green-50">
       <div className="w-[80%] mx-auto px-4 text-center">
         <h2
-          className="text-3xl font-bold text-green-600 mb-8"
+          className="text-3xl font-bold text-black mb-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >

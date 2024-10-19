@@ -162,7 +162,7 @@ const Homepage = () => {
             </div>
          <hr className='w-[70vw] m-auto'/>
         </section> */}
-            <section className="relative bg-cover bg-center h-[80vh] bg-[url('/energy-efficiency.jpeg')]">
+            <section id='recent' className="relative bg-cover bg-center h-[80vh] bg-[url('/energy-efficiency.jpeg')]">
                 <div className="absolute inset-0 bg-green-900 opacity-60"></div>
                 <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                     <h1 className="text-5xl font-bold mb-4">Act Now for a Better Tomorrow</h1>
@@ -215,7 +215,7 @@ const Homepage = () => {
         </section>
 
 
-        <section className='w-auto min-h-[100vh] pt-20'>
+        <section id='climateAction' className='w-auto min-h-[100vh] pt-20'>
              <div className='text-center pt-10' 
              data-aos="fade-up"
              data-aos-delay="100">

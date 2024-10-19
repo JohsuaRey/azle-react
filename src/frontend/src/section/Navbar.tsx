@@ -29,10 +29,10 @@ const Navbar: React.FC = () => {
           <a href="#events" className="text-white hover:text-gray-300 transition duration-300">
             Up comming event
           </a>
-          <a href="#about" className="text-white hover:text-gray-300 transition duration-300">
+          <a href="#recent" className="text-white hover:text-gray-300 transition duration-300">
             Recent Event
           </a>
-          <a href="#services" className="text-white hover:text-gray-300 transition duration-300">
+          <a href="#climateAction" className="text-white hover:text-gray-300 transition duration-300">
             Climate Action
           </a>
           <a href="#contact" className="text-white hover:text-gray-300 transition duration-300">
