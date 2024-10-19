@@ -121,7 +121,7 @@ const Homepage = () => {
         </section>
 
         {/*para sa Recent Events */}
-        <section className='w-auto min-h-[75vh]'>
+        {/* <section className='w-auto min-h-[75vh]'>
             <div>
                 <div className='pt-6'>
                     <h4 className='text-4xl text-center font-bold text-black'
@@ -144,7 +144,6 @@ const Homepage = () => {
                         Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
                         It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
                     </p>
-                    {/* date of events */}
                     <div className='block items-start justify-start mt-5 py-3 rounded-lg pl-2 border-l-4  border-green-500 bg-green-100'>
                         <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>Thursday, October 17, 2024</span></span><br/>
                         <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'> 09:46 PM</span></span><br/>
@@ -162,7 +161,21 @@ const Homepage = () => {
             </a>
             </div>
          <hr className='w-[70vw] m-auto'/>
-        </section>
+        </section> */}
+            <section className="relative bg-cover bg-center h-[80vh] bg-[url('/energy-efficiency.jpeg')]">
+                <div className="absolute inset-0 bg-green-900 opacity-60"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+                    <h1 className="text-5xl font-bold mb-4">Act Now for a Better Tomorrow</h1>
+                    <p className="text-lg mb-6">Join our climate change movement and be a part of the solution.</p>
+                    <div className='flex justify-center items-center mt-8'>
+                    <a href="/eventreport" className="bg-green-500 hover:bg-green-700 text-white py-4 px-6 rounded-full shadow-lg transition duration-300">View Recent Events</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="40" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
         <section className='w-auto min-h-[75vh]'>
             <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
                     <div className='' data-aos="fade-right"
