@@ -62,7 +62,7 @@ const Homepage = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
-                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
                 data-aos="fade-up"
                 data-aos-delay="100"
             >
@@ -70,7 +70,7 @@ const Homepage = () => {
                 <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="card-image"
-                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
                 />
                 <p className="mt-4">
                 Join us in planting trees to help restore natural habitats and combat climate change.
@@ -81,7 +81,7 @@ const Homepage = () => {
                 
             </div>
             <div
-                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
                 data-aos="fade-up"
                 data-aos-delay="100"
             >
@@ -89,7 +89,7 @@ const Homepage = () => {
                 <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="card-image"
-                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
                 />
                 <p className="mt-4">
                 Join us in planting trees to help restore natural habitats and combat climate change.
@@ -99,7 +99,7 @@ const Homepage = () => {
                 </a>
             </div>
             <div
-                className="p-2 bg-gray-50 rounded-lg shadow-md"
+                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
                 data-aos="fade-up"
                 data-aos-delay="100"
             >
@@ -107,7 +107,7 @@ const Homepage = () => {
                 <img
                 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                 alt="card-image"
-                className="rounded-xl mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
+                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
                 />
                 <p className="mt-4">
                 Join us in planting trees to help restore natural habitats and combat climate change.
