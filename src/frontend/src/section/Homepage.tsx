@@ -24,9 +24,7 @@ const Homepage = () => {
             <p className='pt-4 text-xl tracking-wide '
             data-aos="fade-up"
             data-aos-delay="100">Be the change. Volunteer for climate action and help protect the planet for future generations.</p>
-            <a href="#events" className=' outline-none px-10 py-3 rounded-lg text-white text-lg bg-[#305773] hover:bg-[#243642] mt-4 '
-            data-aos="fade-up"
-            data-aos-delay="300">Become a Volunteer</a>
+           
             <div className='flex justify-center items-center mt-8'>
                 <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
