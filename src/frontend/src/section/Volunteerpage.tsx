@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import React, { useState } from 'react';
+import Footer from './Footer';
 
 const Volunteerpage = () => {
     useEffect(() => {
@@ -99,7 +100,7 @@ const Volunteerpage = () => {
                     
                     </h4>
                 </div>
-                <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
+                <div className='border-t-2 border-t-green-500 py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
                     <div>
                         <div className='h-[60vh] w-[50w]'
                         data-aos="fade-up"
@@ -273,10 +274,9 @@ const Volunteerpage = () => {
                     </div>
                 </div>
             </section>
+            <Footer/>
         </div>
-        
         </div>
-
         
         
   )
