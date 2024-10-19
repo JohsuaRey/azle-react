@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { useEffect } from 'react';
 import Eventreports from './Eventreports';
 import Footer from './Footer';
+import ContactUs from './ContactUs';
 
 
 const Homepage = () => {
@@ -34,25 +35,24 @@ const Homepage = () => {
         </div>
         </section>
 
-        <section className=' w-auto pt-8 min-h-[90vh]'>
-            <div className='py-8 mt-20 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
-                <div>
-                    <h4 className='text-4xl font-bold text-left pt-4'
-                    data-aos="fade-right"
-                    data-aos-delay="100">A Sustainable Development Goal for Climate Action</h4>
+        
+        <section className='w-auto min-h-[90vh] pt-10'>
+            <div className='py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>
+                    <div className='grid grid-cols-2 gap-2 md:max-w-[50%]'
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+                    <img src="/climate pic.webp" alt="" className='rounded-xl w-full h-full' />
+                    <img src="/action pic.jpg" alt="" className='rounded-xl w-full h-full' />
+                    <img src="/Climate_Action.jpg" alt="" className='rounded-xl w-full h-full' />
+                    <img src="/3rs2.png" alt="" className='rounded-xl w-full h-full' />
+                    </div>
+                    <div>
+                        <h4 className='text-4xl font-bold text-center md:text-left pt-4'
+                        data-aos="fade-up"
+                        data-aos-delay="100">Innovative Solutions for a Greener Future </h4>
+                    </div>
                 </div>
-                <div className=''>
-                    <p className='text-lg tracking-wide leading-10'
-                    data-aos="fade-left"
-                    data-aos-delay="300">
-                     Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
-                     It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
-                     The goal encourages global cooperation to reduce carbon emissions, enhance disaster risk management, and promote sustainable practices to protect ecosystems and ensure a sustainable future for all. 
-                    </p>
-                </div>
-            </div>
         </section>
-
         {/* para sa events */}
 
         <section id="events" className="py-20 bg-white">
@@ -195,52 +195,26 @@ const Homepage = () => {
                 </div>
         </section>
         
-        <section className='w-auto min-h-[90vh] pt-10'>
-            <div className='py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>
-                    <div className='grid grid-cols-2 gap-2 md:max-w-[50%]'
-                    data-aos="fade-up"
-                    data-aos-delay="100">
-                    <img src="/climate pic.webp" alt="" className='rounded-xl w-full h-full' />
-                    <img src="/action pic.jpg" alt="" className='rounded-xl w-full h-full' />
-                    <img src="/Climate_Action.jpg" alt="" className='rounded-xl w-full h-full' />
-                    <img src="/3rs2.png" alt="" className='rounded-xl w-full h-full' />
-                    </div>
-                    <div>
-                        <h4 className='text-4xl font-bold text-center md:text-left pt-4'
-                        data-aos="fade-up"
-                        data-aos-delay="100">Innovative Solutions for a Greener Future </h4>
-                    </div>
+        <section className=' w-auto pt-8 min-h-[90vh]'>
+            <div className='py-8 mt-20 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
+                <div className=''>
+                    <p className='text-lg tracking-wide leading-10'
+                    data-aos="fade-left"
+                    data-aos-delay="300">
+                     Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
+                     It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness.
+                     The goal encourages global cooperation to reduce carbon emissions, enhance disaster risk management, and promote sustainable practices to protect ecosystems and ensure a sustainable future for all. 
+                    </p>
                 </div>
+                <div>
+                    <h4 className='text-4xl font-bold text-left pt-4'
+                    data-aos="fade-right"
+                    data-aos-delay="100">A Sustainable Development Goal for Climate Action</h4>
+                </div>
+            </div>
         </section>
-        <section id="actions" className="py-20 bg-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold mb-10" 
-                    data-aos="fade-up"
-                    data-aos-delay="100">Key Actions for Climate Action</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8"
-                    data-aos="fade-up"
-                    data-aos-delay="100">
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                            <h3 className="text-2xl font-semibold mb-4">Reduce Carbon Emissions</h3>
-                            <p>
-                                Implement policies to reduce greenhouse gas emissions through sustainable energy, transportation, and industry practices.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                            <h3 className="text-2xl font-semibold mb-4">Enhance Disaster Risk Management</h3>
-                            <p>
-                                Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries.
-                            </p>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
-                            <h3 className="text-2xl font-semibold mb-4">Promote Sustainable Practices</h3>
-                            <p>
-                                Encourage sustainable consumption and production practices that reduce environmental footprints and protect ecosystems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+
         <section className='w-auto min-h-[100vh] pt-20'>
              <div className='text-center pt-10' 
              data-aos="fade-up"
@@ -348,7 +322,7 @@ const Homepage = () => {
             </div>
             <p className='text-center pb-4'>All rights reserved 2024</p>
         </footer> */}
-
+        <ContactUs/>
         <Footer/>
 
 
