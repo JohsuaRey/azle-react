@@ -18,7 +18,7 @@ const Volunteerpage = () => {
         contact: '',
         gender: '',
         address: '',
-        email: '',
+        age: '',
     });
 
     const handleChange = (e) => {
@@ -237,6 +237,20 @@ const Volunteerpage = () => {
                         </div>
 
                         <div className="mt-4">
+                            <label htmlFor="age" className="block text-left mb-2 text-sm font-medium text-gray-900">age</label>
+                            <input
+                                type="text"
+                                id="age"
+                                name="age"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                placeholder="Your age"
+                                value={formData.age}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
+
+                        <div className="mt-4">
                             <label htmlFor="address" className="block text-left mb-2 text-sm font-medium text-gray-900">Address</label>
                             <input
                                 type="text"
@@ -245,20 +259,6 @@ const Volunteerpage = () => {
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
                                 placeholder="Your address"
                                 value={formData.address}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-
-                        <div className="mt-4">
-                            <label htmlFor="email" className="block text-left mb-2 text-sm font-medium text-gray-900">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                                placeholder="Your email"
-                                value={formData.email}
                                 onChange={handleChange}
                                 required
                             />

@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed w-full z-50 p-4 ${sticky ? 'bg-green-500 p-4 shadow-md fixed w-full z-50 ease-in duration-300' : ''} `}>
       <div className="container lg:px-20 mx-auto flex justify-between items-center">
-        <div className="text-white text-3xl font-bold">GreenFuture</div>
+        <div className="text-green-200 text-3xl font-bold">GreenFuture</div>
         <div className="hidden md:flex space-x-6">
           <a href="#events" className="text-white hover:text-gray-300 transition duration-300">
             Up comming event
