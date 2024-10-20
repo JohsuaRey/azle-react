@@ -34,6 +34,15 @@ const upcomingEvents: Event[] = [
     description: 'An interactive forum for young people to voice concerns and share ideas.',
     imageUrl: '/reforest.jpg',
   },
+  
+  {
+    id: 4,
+    title: 'Youth Climate Forum',
+    date: 'January 20, 2025',
+    location: 'Local High School Auditorium',
+    description: 'An interactive forum for young people to voice concerns and share ideas.',
+    imageUrl: '/reforest.jpg',
+  },
 ];
 
 const UpcommingEvents: React.FC = () => {
