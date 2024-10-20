@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-around;
     height: 65px;
-    background: linear-gradient(#003a077b, rgba(0, 58, 7, 0.7)), url('/bg.png');
+    background: linear-gradient(#003a077b, #003a074e), url('/bg.png');
     position: fixed;
     width: 100%;
 }
