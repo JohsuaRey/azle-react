@@ -18,31 +18,31 @@ const upcomingEvents: Event[] = [
     description: 'Join leaders and activists to discuss strategies for tackling climate change.',
     imageUrl: '/Climate_Action.jpg',
   },
-  // {
-  //   id: 2,
-  //   title: 'Sustainable Living Workshop',
-  //   date: 'December 10, 2024',
-  //   location: 'Community Center, Main Hall',
-  //   description: 'Learn practical tips for reducing your carbon footprint and living sustainably.',
-  //   imageUrl: '/conserve water.jpg',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Youth Climate Forum',
-  //   date: 'January 20, 2025',
-  //   location: 'Local High School Auditorium',
-  //   description: 'An interactive forum for young people to voice concerns and share ideas.',
-  //   imageUrl: '/reforest.jpg',
-  // },
+  {
+    id: 2,
+    title: 'Sustainable Living Workshop',
+    date: 'December 10, 2024',
+    location: 'Community Center, Main Hall',
+    description: 'Learn practical tips for reducing your carbon footprint and living sustainably.',
+    imageUrl: '/conserve water.jpg',
+  },
+  {
+    id: 3,
+    title: 'Youth Climate Forum',
+    date: 'January 20, 2025',
+    location: 'Local High School Auditorium',
+    description: 'An interactive forum for young people to voice concerns and share ideas.',
+    imageUrl: '/reforest.jpg',
+  },
   
-  // {
-  //   id: 4,
-  //   title: 'Youth Climate Forum',
-  //   date: 'January 20, 2025',
-  //   location: 'Local High School Auditorium',
-  //   description: 'An interactive forum for young people to voice concerns and share ideas.',
-  //   imageUrl: '/reforest.jpg',
-  // },
+  {
+    id: 4,
+    title: 'Youth Climate Forum',
+    date: 'January 20, 2025',
+    location: 'Local High School Auditorium',
+    description: 'An interactive forum for young people to voice concerns and share ideas.',
+    imageUrl: '/reforest.jpg',
+  },
 ];
 
 const UpcommingEvents: React.FC = () => {
@@ -52,7 +52,7 @@ const UpcommingEvents: React.FC = () => {
             <h4 className='mb-8 text-4xl text-center font-bold text-green-600'
                >Upcoming Events <br/>
            </h4>
-        <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3  gap-8">
+        <div className="grid grid-cols-1 justify-items-center  sm:grid-cols-2 lg:grid-cols-3  gap-8 ">
           {upcomingEvents.map((event) => (
             <div key={event.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img
