@@ -1,45 +1,32 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { useEffect } from 'react';
 import Footer from './Footer';
 import ContactUs from './ContactUs';
 import './animation.css';
 import Hero from './Hero';
 import UpcommingEvents from './UpcommingEvents';
 const Homepage = () => {
-    useEffect(() => {
-        AOS.init({
-          duration: 1000
-        });
-      }, []);
       const heroStyle = {
-        background: "linear-gradient(#003a077b, #003a077b, url('/bg.png')",
+        background: "linear-gradient(#003a077b, rgba(0, 58, 7, 0.7)), url('/bg.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       };
   return (
     <section>
         {/* <Navbar/> */}
-       <section
-        className="min-h-screen w-auto bg-cover bg-center bg-no-repeat"
-        style={heroStyle}
-        >
-            <Navbar/>
-        <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
-        <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] text-green-200'>
-                 Together for a Greener Future
-             </h3>
-             <p className='pt-4 text-xl tracking-wide text-white'>
-                 Join us at Greenfuture in the fight against climate change.
-             </p>
-             
-            <div className='flex justify-center items-center mt-8'>
-            <a className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-white dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Volunteer now</a>
-                {/* <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
-                </svg> */}
+       <section className="min-h-screen w-auto" style={heroStyle}>
+        <Navbar/>
+            <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col sm:pt-60  max-w-[950px] mx-auto px-4'>
+                <h3 className='text-4xl sm:text-6xl font-bold leading-[60px] text-green-200'>
+                    Together for a Greener <br />Future
+                </h3>
+                <p className='pt-4 text-xl tracking-wide text-white'>
+                    Join us at Greenfuture in the fight against climate change.
+                </p>
+                <div className='flex justify-center items-center mt-8'>
+                <a className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-white dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Volunteer now</a>
+                </div>
             </div>
-        </div>
         </section>
         
         {/* <Hero/> */}
@@ -58,107 +45,8 @@ const Homepage = () => {
                 </div>
         </section>
         {/* para sa events */}
+        
         <UpcommingEvents/>
-
-        {/* <section id="events" className="py-20 bg-white">
-            <div className="container mx-auto px-4 text-center">
-                <h2 className="text-4xl font-bold mb-10">
-                Upcoming Events
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div id='animate'
-                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
-            >
-                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
-                <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="card-image"
-                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
-                />
-                <p className="mt-4">
-                Join us in planting trees to help restore natural habitats and combat climate change.
-                </p>
-                <a href="volunteer" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Volunteer Now
-                </a>
-                
-            </div>
-            <div id='animate'
-                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
-            >
-                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
-                <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="card-image"
-                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
-                />
-                <p className="mt-4">
-                Join us in planting trees to help restore natural habitats and combat climate change.
-                </p>
-                <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Volunteer Now
-                </a>
-            </div>
-            <div id='animate'
-                className="p-2 bg-gray-50 rounded-lg shadow-md min-w-[370px] max-w-[400px] m-auto"
-            >
-                <h3 className="text-2xl font-semibold mb-4">Tree Planting Campaign</h3>
-                <img
-                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                alt="card-image"
-                className="mt-2 w-full h-[30vh] md:w-[25vw] object-cover mx-auto"
-                />
-                <p className="mt-4">
-                Join us in planting trees to help restore natural habitats and combat climate change.
-                </p>
-                <a href="#" className="text-green-600 font-semibold hover:underline mb-4 mt-4 block">
-                Volunteer Now
-                </a>
-            </div>
-        </div>
-            </div>
-        </section> */}
-        {/* <section className='w-auto min-h-[75vh]'>
-            <div>
-                <div className='pt-6'>
-                    <h4 className='text-4xl text-center font-bold text-black'
-                    >Recent Event<br/>
-                    </h4>
-                </div>
-                <div className='py-8 mt-10 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1200px] mx-auto'>
-                <div>
-                    <div className='h-[60vh] w-[50w]'>
-                        <img src="/resilient climate.webp" alt="" className='w-full h-full rounded-lg shadow-md'/>
-                        
-                    </div>
-                </div>
-                <div className=''>
-                <div>
-                    <h4 className='text-2xl text-center font-bold text-green-500'
-                        >Tree Planting<br/>
-                    </h4>
-                    <p className='text-lg tracking-wide leading-10'>
-                        Climate Action, one of the Sustainable Development Goals (SDG 13), focuses on urgent actions to combat climate change and its impacts.
-                        It emphasizes the need to strengthen resilience and adaptive capacity to climate-related hazards, integrate climate measures into policies, and raise awareness. 
-                    </p>
-                    <div className='block items-start justify-start mt-5 py-3 rounded-lg pl-2 border-l-4  border-green-500 bg-green-100'>
-                        <span className='text-gray-700 text-sm text-center'>Date of event: <span className='text-gray-500'>Thursday, October 17, 2024</span></span><br/>
-                        <span className='text-gray-700 text-sm text-center'>Time: <span className='text-gray-500'> 09:46 PM</span></span><br/>
-                        <span className='text-gray-700 text-sm text-center'>Address of event: <span className='text-gray-500'>
-                            Sinabacan, Cande, Zambales
-                        </span></span><br/>
-                    </div>
-                </div>
-                </div>
-                </div>
-            </div>
-            <div className='text-center'>
-            <a href="/eventreport" className="text-green-600 text-xl font-semibold underline mb-4 mt-4 block">
-                See more
-            </a>
-            </div>
-         <hr className='w-[70vw] m-auto'/>
-        </section> */}
 
         {/* para sa Event Recent */}
             <section id='recent' className="relative bg-cover bg-center h-[80vh] bg-[url('/energy-efficiency.jpeg')]">
