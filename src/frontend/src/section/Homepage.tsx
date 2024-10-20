@@ -13,7 +13,7 @@ const Homepage = () => {
         });
       }, []);
       const heroStyle = {
-        background: "linear-gradient(#003a079b, rgba(0, 58, 7, 0.7)), url('/bg.png')",
+        background: "linear-gradient(#003a077b, #003a077b, url('/bg.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       };
@@ -30,7 +30,7 @@ const Homepage = () => {
                  Together for a Greener Future
              </h3>
              <p className='pt-4 text-xl tracking-wide text-white'>
-                 Join us at Greenfuture in the fight against climate change. Every small action counts. Be part of the solution, and let's create a sustainable world for generations to come.
+                 Join us at Greenfuture in the fight against climate change.
              </p>
            
             <div className='flex justify-center items-center mt-8'>
@@ -58,6 +58,7 @@ const Homepage = () => {
         </section>
         {/* para sa events */}
         <UpcommingEvents/>
+
         {/* <section id="events" className="py-20 bg-white">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-4xl font-bold mb-10">
