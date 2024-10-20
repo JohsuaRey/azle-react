@@ -13,10 +13,10 @@ const Homepage = () => {
       };
   return (
     <section>
-        {/* <Navbar/> */}
-       <section className="min-h-screen w-auto" style={heroStyle}>
         <Navbar/>
-            <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col sm:pt-60  max-w-[950px] mx-auto px-4'>
+       <section className="min-h-screen w-auto" style={heroStyle}>
+        {/* <Navbar/> */}
+            <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col sm:pt-60 pt-40  max-w-[950px] mx-auto px-4'>
                 <h3 className='text-4xl sm:text-6xl font-bold leading-[60px] text-green-200'>
                     Together for a Greener <br />Future
                 </h3>

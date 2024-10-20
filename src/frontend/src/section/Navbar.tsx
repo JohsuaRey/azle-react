@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 130);
+      setSticky(window.scrollY > 590);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,9 +22,9 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`p-4 ${sticky ? 'bg-green-500 p-4 shadow-md fixed w-full z-50 ease-in duration-300' : ''} `}>
+    <nav className={`fixed w-full z-50 p-4 ${sticky ? 'bg-green-500 p-4 shadow-md fixed w-full z-50 ease-in duration-300' : ''} `}>
       <div className="container lg:px-20 mx-auto flex justify-between items-center">
-        <div className="text-white text-2xl font-bold">GreenFuture</div>
+        <div className="text-white text-3xl font-bold">GreenFuture</div>
         <div className="hidden md:flex space-x-6">
           <a href="#events" className="text-white hover:text-gray-300 transition duration-300">
             Up comming event
