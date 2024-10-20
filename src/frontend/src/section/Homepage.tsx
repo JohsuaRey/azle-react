@@ -26,17 +26,18 @@ const Homepage = () => {
         >
             <Navbar/>
         <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
-        <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] text-white'>
+        <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] text-green-200'>
                  Together for a Greener Future
              </h3>
              <p className='pt-4 text-xl tracking-wide text-white'>
                  Join us at Greenfuture in the fight against climate change.
              </p>
-           
+             
             <div className='flex justify-center items-center mt-8'>
-                <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <a className="text-white hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 dark:border-green-500 dark:text-white dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Volunteer now</a>
+                {/* <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
-                </svg>
+                </svg> */}
             </div>
         </div>
         </section>
@@ -207,9 +208,11 @@ const Homepage = () => {
         </section>
 
 
-        <section id='climateAction' className='w-auto min-h-[100vh] pt-20'>
+        <section id='climateAction' className='w-auto min-h-[100vh]'>
              <div id='animate' className='text-center pt-10'>
-                <h4 className='text-4xl font-bold  pt-4'>Climate Action: Turning Ideas into Impact</h4>
+                <h4 className='mb-8 text-4xl text-center font-bold text-green-600'
+               >Climate Action: Turning Ideas into Impact<br/>
+           </h4>
             </div>
             <div className='py-16 mt-8 grid grid-col-span-1 md:grid-cols-2 gap-7 items-start px-6 max-w-[1100px] mx-auto'>
                 <div className='flex items-start justify-center gap-4 '>
