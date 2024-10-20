@@ -12,15 +12,20 @@ const Homepage = () => {
           duration: 1000
         });
       }, []);
+      const heroStyle = {
+        background: "linear-gradient(#003a079b, rgba(0, 58, 7, 0.7)), url('/bg.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      };
   return (
     <section>
         {/* <Navbar/> */}
        <section
         className="min-h-screen w-auto bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/mesh-gradient.png')` }}
+        style={heroStyle}
         >
             <Navbar/>
-        <div className='flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
+        <div className='relative z-10 flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
         <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] text-white'>
                  Together for a Greener Future
              </h3>
