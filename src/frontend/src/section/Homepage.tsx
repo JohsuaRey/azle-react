@@ -14,24 +14,29 @@ const Homepage = () => {
       }, []);
   return (
     <section>
-        <Navbar/>
-       {/* <section
+        {/* <Navbar/> */}
+       <section
         className="min-h-screen w-auto bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/bg.png')` }}
+        style={{ backgroundImage: `url('/mesh-gradient.png')` }}
         >
+            <Navbar/>
         <div className='flex items-center justify-center text-center gap-4 flex-col pt-40 sm:pt-60  max-w-[950px] mx-auto px-4'>
-            <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] '>Join the Movement for a Greener Tomorrow</h3>
-            <p className='pt-4 text-xl tracking-wide '>Be the change. Volunteer for climate action and help protect the planet for future generations.</p>
+        <h3 className='sm:text-5xl text-4xl font-bold leading-[60px] text-white'>
+                 Together for a Greener Future
+             </h3>
+             <p className='pt-4 text-xl tracking-wide text-white'>
+                 Join us at Greenfuture in the fight against climate change. Every small action counts. Be part of the solution, and let's create a sustainable world for generations to come.
+             </p>
            
             <div className='flex justify-center items-center mt-8'>
-                <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <svg className="w-[48px] animate-bounce  h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 19V5m0 14-4-4m4 4 4-4"/>
                 </svg>
             </div>
         </div>
-        </section> */}
+        </section>
         
-        <Hero/>
+        {/* <Hero/> */}
 
         <section className='w-auto min-h-[90vh] pt-10'>
             <div className=' py-8 mt-10 flex max-md:flex-col-reverse  gap-8 items-center px-6 max-w-[1100px] mx-auto'>

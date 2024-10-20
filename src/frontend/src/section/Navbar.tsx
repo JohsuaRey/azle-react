@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 150);
+      setSticky(window.scrollY > 130);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`container ${sticky ? 'bg-green-600 p-4 shadow-md fixed w-full z-50 ease-in duration-300' : ''} `}>
+    <nav className={`p-4 ${sticky ? 'bg-green-600 p-4 shadow-md fixed w-full z-50 ease-in duration-300' : ''} `}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-2xl font-bold">GreenFuture</div>
         <div className="hidden md:flex space-x-6">
@@ -61,17 +61,17 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center bg-green-700 mt-2 space-y-2 p-2 rounded transition duration-300 ease-in-out">
-          <a href="#home" className="text-white hover:text-gray-300 transition duration-300">
-            Home
+          <a href="#events" className="text-white hover:text-gray-300 transition duration-300">
+          Up comming event
           </a>
-          <a href="#about" className="text-white hover:text-gray-300 transition duration-300">
-            About
+          <a href="#recent" className="text-white hover:text-gray-300 transition duration-300">
+          Recent Event
           </a>
-          <a href="#services" className="text-white hover:text-gray-300 transition duration-300">
-            Services
+          <a href="#climateAction" className="text-white hover:text-gray-300 transition duration-300">
+          Climate Action
           </a>
           <a href="#contact" className="text-white hover:text-gray-300 transition duration-300">
-            Contact
+            Contact Us
           </a>
         </div>
       )}

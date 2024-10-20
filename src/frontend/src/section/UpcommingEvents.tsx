@@ -38,9 +38,9 @@ const upcomingEvents: Event[] = [
 
 const UpcommingEvents: React.FC = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section id='events' className="pt-20 pb-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Upcoming Events</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 mb-8">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {upcomingEvents.map((event) => (
             <div key={event.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
