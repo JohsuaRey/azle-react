@@ -55,7 +55,7 @@ const Volunteerpage = () => {
                     data-aos-delay="100">Act Now for a Better Tomorrow</h1>
                     <p className="text-lg mb-6"
                     data-aos="fade-up"
-                    data-aos-delay="100">Join our climate change movement and be a part of the solution.</p>
+                    data-aos-delay="100">These events provide an opportunity to connect with like-minded individuals, gain valuable insights, and become part of a larger movement for change. Your participation can make a significant impact!</p>
                     <a href="#sign-up" className="bg-green-500 hover:bg-green-700 text-white py-3 px-6 rounded-full shadow-lg transition duration-300"
                     data-aos="fade-up"
                     data-aos-delay="300">Become a Volunteer</a>

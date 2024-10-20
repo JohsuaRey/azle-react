@@ -1,90 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log('Form Data:', formData);
+    // Reset form after submission
+    setFormData({
+      name: '',
+      phone: '',
+      message: '',
+    });
+  };
+
   return (
-    <section id="contact" className="mt-8 py-16 bg-green-50">
-      <div className="w-[80%] mx-auto px-4 text-center">
-        <h2
-          className="text-3xl font-bold text-black mb-8"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Contact Us
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 shadow-xl rounded-xl bg-white p-8">
-          <form
-            className="w-full"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-left mb-2 text-sm font-medium text-gray-900"
-              >
-                Name
-              </label>
+    <div id='contact' className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex flex-wrap max-w-6xl bg-white rounded-lg shadow-lg">
+        {/* Contact Information Section */}
+        <div className="w-full p-8 md:w-1/2 bg-gray-50">
+          <h2 className="text-2xl font-semibold text-gray-800">Sent us a message <span role="img" aria-label="envelope"></span></h2>
+          <p className="mt-4 text-gray-600">
+          We'd love to hear from you! Whether you have a question about our events, need assistance, or just want to provide feedback, our team is ready to assist you. Please fill out the form with your details, and we'll get back to you as soon as possible.
+          </p>
+          <div className="mt-8 space-y-4">
+            <div className="flex items-center text-gray-800">
+              <FiMail className="mr-2 text-green-600" />
+              <span>burcejosh19@gmail.com</span>
+            </div>
+            <div className="flex items-center text-gray-800">
+              <FiPhone className="mr-2 text-green-600" />
+              <span>0966-724-8923</span>
+            </div>
+            <div className="flex items-center text-gray-800">
+              <FiMapPin className="mr-2 text-green-600" />
+              <span>Candelaria, Zambales, Sinabacan</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Form Section */}
+        <div className="w-full p-8 md:w-1/2">
+          <h2 className="text-2xl font-semibold text-gray-800">Get in Tuch</h2>
+          <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            <div>
+              <label className="block text-sm text-gray-600">Your name</label>
               <input
                 type="text"
-                id="name"
                 name="name"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Enter your name"
+                className="w-full px-4 py-2 mt-2 border rounded-md bg-blue-50 focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
               />
             </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="email"
-                className="block text-left mb-2 text-sm font-medium text-gray-900"
-              >
-                Email
-              </label>
+            <div>
+              <label className="block text-sm text-gray-600">Phone Number</label>
               <input
-                type="email"
-                id="email"
-                name="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                placeholder="Your email"
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Enter your mobile number"
+                className="w-full px-4 py-2 mt-2 border rounded-md bg-blue-50 focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
               />
             </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="message"
-                className="block text-left mb-2 text-sm font-medium text-gray-900"
-              >
-                Message
-              </label>
+            <div>
+              <label className="block text-sm text-gray-600">Write your message here</label>
               <textarea
-                id="message"
                 name="message"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 h-32"
-                placeholder="Your message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Enter your message"
+                className="w-full px-4 py-2 mt-2 border rounded-md bg-blue-50 focus:outline-none focus:ring-2 focus:ring-green-500"
+                rows="4"
                 required
               ></textarea>
             </div>
-
             <button
               type="submit"
-              className="bg-green-600 text-white py-3 px-[50px] rounded-full mt-6 hover:bg-green-700 transition duration-300"
+              className="px-4 py-2 text-white bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              Send Message
+              Submit now
             </button>
           </form>
-
-          <div
-            className="hidden md:block"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <img src="/contact.png" alt="Contact Us" className="w-full h-full" />
-          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
