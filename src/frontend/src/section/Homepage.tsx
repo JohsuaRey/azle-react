@@ -108,7 +108,7 @@ const Homepage = () => {
                         <img src="/renewable energy.webp" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Transition to Renewable Energy</h4>
+                        <a target='_blank' href="https://www.spglobal.com/en/research-insights/market-insights/what-is-energy-transition#:~:text=Energy%20transition%20refers%20to%20the,well%20as%20lithium%2Dion%20batteries."><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Transition to Renewable Energy</h4></a>
                         <p className='text-md max-w-[400px] '>Shift from fossil fuels to clean energy sources like solar, wind, hydro, and geothermal power.</p>
                     </div>
                 </div>
@@ -117,16 +117,17 @@ const Homepage = () => {
                         <img src="/energy-efficiency.jpeg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Energy Efficiency</h4>
+                        <a target='_blank' href="https://www.energy.gov/eere/energy-efficiency-buildings-and-industry#:~:text=Energy%20efficiency%20is%20the%20use,less%20energy%20to%20produce%20goods."><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Energy Efficiency</h4></a>
                         <p className='text-md max-w-[400px] '>Implement energy-saving practices in homes, businesses, and industries by using efficient appliances and optimizing energy usage.</p>
                     </div>
                 </div>
+                
                 <div className='flex items-start justify-center gap-4 '>
                     <div id='animate'>
                         <img src="/reforest.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Reforestation and Afforestation</h4>
+                        <a target='_blank' href="https://www.drax.com/sustainable-bioenergy/what-is-reforestation-and-afforestation/#:~:text=Reforestation%20is%20the%20process%20of,before%2C%20creating%20a%20new%20forest."><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Reforestation and Afforestation</h4></a>
                         <p className='text-md max-w-[400px] '>Protect existing forests and plant new trees to absorb carbon dioxide, creating carbon sinks.</p>
                     </div>
                 </div>
@@ -134,8 +135,10 @@ const Homepage = () => {
                     <div id='animate'>
                         <img src="/electric vehicle.webp" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
+                    
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Promote Electric Vehicles (EVs)</h4>
+                    <a target='_blank' href="https://www.epd.gov.hk/epd/english/environmentinhk/air/promotion_ev/promotion_ev.html"><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Promote Electric Vehicles (EVs)</h4></a>
+                        <h4 className='text-xl font-bold py-2'></h4>
                         <p className='text-md max-w-[400px] '>Encourage the use of electric cars, buses, and bikes to reduce pollution from traditional combustion engines.</p>
                     </div>
                 </div>
@@ -144,7 +147,7 @@ const Homepage = () => {
                         <img src="/3rs.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Reduce, Reuse, and Recycle</h4>
+                    <a target='_blank' href="https://solarschools.net/knowledge-bank/sustainability/reduce-reuse-recycle"><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Reduce, Reuse, and Recycle</h4></a>
                         <p className='text-md max-w-[400px] '>Minimize waste production and encourage recycling programs to reduce the amount of waste in landfills, which produce harmful greenhouse gases.</p>
                     </div>
                 </div>
@@ -153,7 +156,7 @@ const Homepage = () => {
                         <img src="/conserve water.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Conservation of Water Resources</h4>
+                    <a target='_blank' href="https://solarschools.net/knowledge-bank/sustainability/reduce-reuse-recycle"><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Conservation of Water Resources</h4></a>
                         <p className='text-md max-w-[400px] '>Protect water bodies and adopt water-efficient practices in agriculture, industry, and households to safeguard this vital resource.</p>
                     </div>
                 </div>
@@ -162,7 +165,7 @@ const Homepage = () => {
                         <img src="/plant based diet.jpg" alt="" className='rounded-xl w-[120px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Adopt a Plant-Based Diet</h4>
+                        <a target='_blank' href="https://solarschools.net/knowledge-bank/sustainability/reduce-reuse-recycle"><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Adopt a Plant-Based Diet</h4></a>
                         <p className='text-md max-w-[400px] '>Reducing meat consumption can lower methane emissions from livestock and decrease the land and water used for animal farming.</p>
                     </div>
                 </div>
@@ -171,7 +174,7 @@ const Homepage = () => {
                         <img src="/resilient climate.webp" alt="" className='rounded-xl w-[100px] h-[100px]' />
                     </div>
                     <div id='animate'>
-                        <h4 className='text-xl font-bold py-2'>Invest in Climate-Resilient Infrastructure</h4>
+                        <a target='_blank' href="https://news.climate.columbia.edu/2024/07/22/the-case-for-climate-resilient-infrastructure/#:~:text=Investing%20in%20climate%2Dresilient%20infrastructure,to%20continually%20repair%20and%20rebuild."><h4 className='text-xl font-bold py-2 hover:text-blue-500 underline underline-offset-2'>Invest in Climate-Resilient Infrastructure</h4></a>
                         <p className='text-md max-w-[400px] '>Develop infrastructure that can withstand the impacts of climate change, such as floods, heat waves, and rising sea levels.</p>
                     </div>
                 </div>
